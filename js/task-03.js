@@ -19,8 +19,7 @@ const invocation = document.querySelector('.gallery');
 const createImage = (elements) => elements.map(element => `<li class = "item-img"> <img class = "photo" alt = "${element.alt}" src = "${element.url}"> </li>`
 ).join(' ');
 
-const createdImage = createImage(images)
-console.log(createdImage)
+const createdImage = createImage(images);
 
 const li = invocation.insertAdjacentHTML("afterbegin", createdImage);
 
