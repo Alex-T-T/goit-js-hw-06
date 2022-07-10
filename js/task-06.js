@@ -18,7 +18,7 @@ const validationFunc = (event) => {
 }
 input.addEventListener('blur', validationFunc);
 
-// // ========= Рішення ==========
+// // ========= Рішення 2 ==========
 // input.onfocus = (event) => input.classList.remove('valid', 'invalid');
 // input.onblur = (event) => {
 //     if ( event.currentTarget.value.length === length) {
