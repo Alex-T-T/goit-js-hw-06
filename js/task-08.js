@@ -1,20 +1,48 @@
+
+// const form = document.querySelector('.login-form');
+// const email = form.elements[0];
+// const password = form.elements[1];
+
+// const getInfo = (event) => {
+//     event.preventDefault();
+//     const infoBox = {
+//         email: email.value,
+//         password: password.value,
+//     };
+
+//     if (email.value === '' || password.value === '') {
+//         alert('Додайте дані в порожні поля: email/password');
+//     } 
+
+//     console.log(infoBox);
+//     form.reset();
+//     return;
+// };
+    
+// form.addEventListener('submit', getInfo);
+
+
+
 const form = document.querySelector('.login-form');
-const email = form.elements[0];
-const password = form.elements[1];
 
 const getInfo = (event) => {
     event.preventDefault();
+    const emailRef = event.currentTarget.email.value
+   
+    const passwordRef = event.currentTarget.password.value
+   
     const infoBox = {
-        email: email.value,
-        password: password.value,
+        emailRef,
+        passwordRef,
     };
 
-    if (email.value === '' || password.value === '') {
+    if (emailRef === '' || passwordRef === '') {
         alert('Додайте дані в порожні поля: email/password');
     } 
 
     console.log(infoBox);
     form.reset();
+    return;
 };
     
 form.addEventListener('submit', getInfo);
