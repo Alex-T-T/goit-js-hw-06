@@ -25,14 +25,7 @@ button {
 
 
 /* ==========for Task #3 ==========*/
-.gallery {
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-align-items: center;
-justify-content: center;
-background-color: #d9efe4;
-} 
+
 .item-img {
     list-style: none;
     margin-top: 0px;

@@ -27,9 +27,9 @@ const form = document.querySelector('.login-form');
 
 const getInfo = (event) => {
     event.preventDefault();
-    const emailRef = event.currentTarget.email.value
+    const emailRef = event.target.email.value
    
-    const passwordRef = event.currentTarget.password.value
+    const passwordRef = event.target.password.value
    
     const infoBox = {
         emailRef,

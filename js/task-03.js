@@ -16,13 +16,19 @@ const images = [
 
 const invocation = document.querySelector('.gallery');
 
-const createImage = (elements) => elements.map(element => `<li class = "item-img"> <img class = "photo" alt = "${element.alt}" src = "${element.url}"> </li>`
+const createImage = (elements) => elements.map(element =>`<li class = "item-img"> <img class = "photo" alt = "${element.alt}" src = "${element.url}"> </li>`
 ).join(' ');
 
 const createdImage = createImage(images);
 
 const li = invocation.insertAdjacentHTML("afterbegin", createdImage);
 
+
+
+invocation.style.display = 'flex';
+invocation.style.flexDirection = 'column';
+invocation.style.alignItems = 'center';
+invocation.style.backgroundColor = '#d9efe4';
 
 
 
